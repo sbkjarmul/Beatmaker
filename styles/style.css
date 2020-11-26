@@ -1,8 +1,13 @@
 * {
   padding: 0;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: black;
   font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 .landing-page {
@@ -48,7 +53,6 @@
 }
 
 .landing-page .navbar .logo span {
-  color: white;
   font-size: 1.75rem;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -86,7 +90,6 @@
   border-radius: 28px;
   border: none;
   background: rgba(255, 255, 255, 0.3);
-  color: white;
   letter-spacing: 0.5px;
   font-weight: 300;
   font-size: 0.75rem;
@@ -143,7 +146,6 @@
 }
 
 .landing-page .footer .indicators span {
-  color: white;
   font-size: 2.5rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -183,7 +185,6 @@
 .landing-page .footer .social-media ul.footer-menu li.menu-item {
   background-color: rgba(250, 63, 241, 0);
   margin: 0 0.5rem;
-  color: white;
 }
 
 .landing-page .caption {
@@ -195,8 +196,72 @@
 }
 
 .landing-page .caption h1 {
-  color: white;
   font-size: 6rem;
   text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.dj-section {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dj-section .dj-box {
+  margin: auto;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.dj-section .dj-box .content-box {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 2rem;
+}
+
+.dj-section .dj-box .content-box h5 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #640014;
+}
+
+.dj-section .dj-box .content-box p {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #c8c8c8;
+}
+
+.dj-section .dj-box .image-box {
+  min-width: 350px;
+  width: 50%;
+}
+
+.dj-section .dj-box .image-box img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

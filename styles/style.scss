@@ -18,8 +18,13 @@
 * {
   padding: 0;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: black;
   font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 .landing-page {
@@ -38,7 +43,6 @@
       @include s-flex-item();
       background-color: transparent;
       span {
-        color: white;
         font-size: 1.75rem;
         font-weight: 600;
         letter-spacing: 0.5px;
@@ -59,7 +63,6 @@
         border-radius: 28px;
         border: none;
         background: rgba(255, 255, 255, 0.3);
-        color: white;
         letter-spacing: 0.5px;
         font-weight: 300;
         font-size: 0.75rem;
@@ -87,7 +90,6 @@
       text-align: baseline;
       align-items: baseline;
       span {
-        color: white;
         font-size: 2.5rem;
         font-weight: 600;
         letter-spacing: 1px;
@@ -112,7 +114,6 @@
         li.menu-item {
           background-color: rgba(250, 63, 241, 0);
           margin: 0 0.5rem;
-          color: white;
         }
       }
     }
@@ -124,9 +125,50 @@
     left: 50%;
     transform: translate(-50%, -50%);
     h1 {
-      color: white;
       font-size: 6rem;
       text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.dj-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .dj-box {
+    margin: auto;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    .content-box {
+      justify-content: center;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      padding-right: 2rem;
+      h1 {
+      }
+      h5 {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: rgba(100, 0, 20, 1);
+      }
+      p {
+        font-size: 1rem;
+        font-weight: 200;
+        color: rgba(200, 200, 200, 1);
+      }
+    }
+    .image-box {
+      min-width: 350px;
+      width: 50%;
+      img {
+        width: 100%;
+      }
     }
   }
 }
