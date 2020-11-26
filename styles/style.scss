@@ -1,3 +1,20 @@
+@mixin s-flex-item() {
+  flex-grow: 1;
+  background: none;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+@mixin container() {
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(1, 1, 1, 0);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -15,17 +32,11 @@
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 
-  .container {
-    width: 100%;
-    height: 5rem;
-    background-color: rgba(1, 1, 1, 0);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  .navbar {
+    @include container();
     .logo {
-      flex-grow: 1;
+      @include s-flex-item();
       background-color: transparent;
-
       span {
         color: white;
         font-size: 1.75rem;
@@ -40,19 +51,82 @@
       background-color: blue;
     }
     .buttons {
-      flex-grow: 1;
-      background: none;
-      display: flex;
+      @include s-flex-item();
       justify-content: flex-end;
       .btn {
-        padding: 1rem 2.5rem;
+        height: auto;
+        padding: 0.8rem 2rem;
         border-radius: 28px;
         border: none;
         background: rgba(255, 255, 255, 0.3);
         color: white;
         letter-spacing: 0.5px;
-        font-weight: 200;
+        font-weight: 300;
+        font-size: 0.75rem;
+        &:hover {
+          background: rgba(250, 63, 241, 0.9);
+          box-shadow: 0 0 1.5rem rgba(255, 53, 245, 0.6);
+        }
       }
+    }
+  }
+  .footer {
+    @include container();
+    background-color: rgba(255, 53, 245, 0);
+    padding-left: inherit;
+    padding-right: inherit;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100% inherit;
+    box-sizing: border-box;
+    .indicators {
+      @include s-flex-item();
+      background-color: rgba(0, 0, 0, 0);
+      text-align: baseline;
+      align-items: baseline;
+      span {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding-left: 4px;
+        &:nth-child(2) {
+          font-size: 1rem;
+          font-weight: 600;
+          color: rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
+    .social-media {
+      display: flex;
+      justify-content: flex-end;
+      flex-grow: 9;
+      background-color: transparent;
+      ul.footer-menu {
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        text-decoration: none;
+        li.menu-item {
+          background-color: rgba(250, 63, 241, 0);
+          margin: 0 0.5rem;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+      color: white;
+      font-size: 6rem;
+      text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     }
   }
 }

@@ -17,7 +17,7 @@
   padding-right: 2.5rem;
 }
 
-.landing-page .container {
+.landing-page .navbar {
   width: 100%;
   height: 5rem;
   background-color: rgba(1, 1, 1, 0);
@@ -32,14 +32,22 @@
           align-items: center;
 }
 
-.landing-page .container .logo {
+.landing-page .navbar .logo {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: transparent;
 }
 
-.landing-page .container .logo span {
+.landing-page .navbar .logo span {
   color: white;
   font-size: 1.75rem;
   font-weight: 600;
@@ -48,14 +56,14 @@
   text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.7);
 }
 
-.landing-page .container .menu {
+.landing-page .navbar .menu {
   -webkit-box-flex: 10;
       -ms-flex-positive: 10;
           flex-grow: 10;
   background-color: blue;
 }
 
-.landing-page .container .buttons {
+.landing-page .navbar .buttons {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -63,18 +71,132 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-.landing-page .container .buttons .btn {
-  padding: 1rem 2.5rem;
+.landing-page .navbar .buttons .btn {
+  height: auto;
+  padding: 0.8rem 2rem;
   border-radius: 28px;
   border: none;
   background: rgba(255, 255, 255, 0.3);
   color: white;
   letter-spacing: 0.5px;
-  font-weight: 200;
+  font-weight: 300;
+  font-size: 0.75rem;
+}
+
+.landing-page .navbar .buttons .btn:hover {
+  background: rgba(250, 63, 241, 0.9);
+  -webkit-box-shadow: 0 0 1.5rem rgba(255, 53, 245, 0.6);
+          box-shadow: 0 0 1.5rem rgba(255, 53, 245, 0.6);
+}
+
+.landing-page .footer {
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(1, 1, 1, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 53, 245, 0);
+  padding-left: inherit;
+  padding-right: inherit;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100% inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.landing-page .footer .indicators {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.landing-page .footer .indicators span {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-left: 4px;
+}
+
+.landing-page .footer .indicators span:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.landing-page .footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 9;
+      -ms-flex-positive: 9;
+          flex-grow: 9;
+  background-color: transparent;
+}
+
+.landing-page .footer .social-media ul.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.landing-page .footer .social-media ul.footer-menu li.menu-item {
+  background-color: rgba(250, 63, 241, 0);
+  margin: 0 0.5rem;
+  color: white;
+}
+
+.landing-page .caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.landing-page .caption h1 {
+  color: white;
+  font-size: 6rem;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=style.css.map */
