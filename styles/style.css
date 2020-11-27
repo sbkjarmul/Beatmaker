@@ -15,17 +15,52 @@ body {
           box-sizing: border-box;
   width: 100vw;
   height: 100vh;
-  background-image: url("../img/lp.jpg");
-  background-position: center center;
-  background-size: cover;
+  overflow: hidden;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
 
-.landing-page .navbar {
+.landing-page .firstPlan {
+  position: absolute;
   width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.landing-page .secondPlan {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
+
+.landing-page .thirdPlan {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 8;
+}
+
+.landing-page .shadow {
+  position: absolute;
+  bottom: 100%;
+  height: 50vh;
+  width: 100%;
+  left: 0;
+  bottom: -10rem;
+  z-index: 20;
+  color: white;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(60%, black), to(transparent));
+  background: linear-gradient(to top, black 60%, transparent);
+}
+
+.landing-page .navbar {
+  top: 0;
+  position: absolute;
   height: 5rem;
-  background-color: rgba(1, 1, 1, 0);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,6 +70,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  left: 0;
+  right: 0;
+  padding-left: inherit;
+  padding-right: inherit;
+  width: 100% inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 20;
 }
 
 .landing-page .navbar .logo {
@@ -93,6 +136,7 @@ body {
   letter-spacing: 0.5px;
   font-weight: 300;
   font-size: 0.75rem;
+  color: white;
 }
 
 .landing-page .navbar .buttons .btn:hover {
@@ -102,9 +146,8 @@ body {
 }
 
 .landing-page .footer {
-  width: 100%;
+  position: absolute;
   height: 5rem;
-  background-color: rgba(1, 1, 1, 0);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,16 +157,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(255, 53, 245, 0);
-  padding-left: inherit;
-  padding-right: inherit;
-  position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  padding-left: inherit;
+  padding-right: inherit;
   width: 100% inherit;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  z-index: 20;
+  bottom: 0;
 }
 
 .landing-page .footer .indicators {
@@ -188,6 +230,7 @@ body {
 }
 
 .landing-page .caption {
+  z-index: 9;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -201,6 +244,9 @@ body {
 }
 
 .dj-section {
+  background-color: black;
+  position: absolute;
+  z-index: 30;
   width: 100vw;
   height: 100vh;
   display: -webkit-box;

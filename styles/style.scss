@@ -7,12 +7,19 @@
 }
 
 @mixin container() {
-  width: 100%;
+  position: absolute;
   height: 5rem;
-  background-color: rgba(1, 1, 1, 0);
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  left: 0;
+  right: 0;
+  padding-left: inherit;
+  padding-right: inherit;
+  width: 100% inherit;
+  box-sizing: border-box;
+  z-index: 20;
+  //background-color: rgba(250, 63, 241, 0.9);
 }
 
 * {
@@ -31,14 +38,56 @@ body {
   box-sizing: border-box;
   width: 100vw;
   height: 100vh;
-  background-image: url("../img/lp.jpg");
-  background-position: center center;
-  background-size: cover;
+  overflow: hidden;
+  //background-image: url("../img/lp.jpg");
+  //background-position: center center;
+  //background-size: cover;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 
+  .firstPlan {
+    position: absolute;
+    width: 100%;
+    //bottom: -5rem;
+    left: 0;
+    top: 0;
+    z-index: 10;
+  }
+
+  .secondPlan {
+    position: absolute;
+    width: 100%;
+    //bottom: -5rem;
+    left: 0;
+    top: 0;
+    z-index: 9;
+  }
+
+  .thirdPlan {
+    position: absolute;
+    width: 100%;
+    //bottom: -5rem;
+    left: 0;
+    top: 0;
+    z-index: 8;
+  }
+
+  .shadow {
+    position: absolute;
+    bottom: 100%;
+    height: 50vh;
+    width: 100%;
+    left: 0;
+    bottom: -10rem;
+    z-index: 20;
+    color: white;
+    background: linear-gradient(to top, black 60%, transparent);
+  }
+
   .navbar {
+    top: 0;
     @include container();
+    //background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
     .logo {
       @include s-flex-item();
       background-color: transparent;
@@ -66,6 +115,7 @@ body {
         letter-spacing: 0.5px;
         font-weight: 300;
         font-size: 0.75rem;
+        color: white;
         &:hover {
           background: rgba(250, 63, 241, 0.9);
           box-shadow: 0 0 1.5rem rgba(255, 53, 245, 0.6);
@@ -73,17 +123,11 @@ body {
       }
     }
   }
+
   .footer {
     @include container();
-    background-color: rgba(255, 53, 245, 0);
-    padding-left: inherit;
-    padding-right: inherit;
-    position: absolute;
-    left: 0;
-    right: 0;
     bottom: 0;
-    width: 100% inherit;
-    box-sizing: border-box;
+
     .indicators {
       @include s-flex-item();
       background-color: rgba(0, 0, 0, 0);
@@ -120,6 +164,7 @@ body {
   }
 
   .caption {
+    z-index: 9;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -132,6 +177,9 @@ body {
 }
 
 .dj-section {
+  background-color: black;
+  position: absolute;
+  z-index: 30;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -149,8 +197,7 @@ body {
       display: flex;
       flex-direction: column;
       padding-right: 2rem;
-      h1 {
-      }
+
       h5 {
         font-size: 1rem;
         letter-spacing: 1px;
