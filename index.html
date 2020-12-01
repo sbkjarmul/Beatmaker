@@ -8,6 +8,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
     <title>GlassTest</title>
   </head>
   <body>
@@ -19,13 +25,19 @@
         </div>
         <div class="menu"></div>
         <div class="buttons">
-          <button class="btn">Sign Up</button>
+          <button class="btn">
+            <span>Sign Up</span></i>
+          </button>
         </div>
       </nav>
-
       <div class="shadow"></div>
 
-      <img
+      <div class="first translate" data-speed="-0.3"></div>
+      <div class="second translate" data-speed="-0.1"></div>
+      <div class="third translate" data-speed=".7"></div>
+
+      <!--
+        <img
         src="/img/firstPlan.png"
         class="firstPlan translate"
         data-speed="-0.3"
@@ -41,10 +53,10 @@
       <img
         src="/img/background.jpg"
         class="thirdPlan translate"
-        data-speed=".9"
+        data-speed=".7"
         alt=""
       />
-
+      -->
       <div class="caption">
         <h1>Wanderlust.</h1>
       </div>
@@ -61,9 +73,9 @@
       </div>
     </div>
     <!-- End Landing Page -->
-
     <!-- DJ Section -->
     <div class="dj-section">
+      <div class="black-box translate" data-speed="-0.3"></div>
       <div class="dj-box">
         <div class="content-box">
           <h5>Live</h5>
@@ -80,8 +92,47 @@
           <img src="img/marshmello.jpg" alt="Marshmello" />
         </div>
       </div>
+      <div class="dj-box">
+        <div class="content-box">
+          <h5>Live</h5>
+          <h1>No Name</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse,
+            mollitia, et labore odit vitae expedita doloremque saepe ipsam
+            quisquam facere aut? Quas soluta sequi doloremque suscipit officia
+            et rem adipisci, fuga voluptate vero, quis repellendus maxime
+            aliquid minima ratione repudiandae.
+          </p>
+        </div>
+        <div class="image-box">
+          <img src="img/noname.png" alt="NoName" />
+        </div>
+      </div>
+      <div class="dj-box">
+        <div class="content-box">
+          <h5>Live</h5>
+          <h1>Deadmau5</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse,
+            mollitia, et labore odit vitae expedita doloremque saepe ipsam
+            quisquam facere aut? Quas soluta sequi doloremque suscipit officia
+            et rem adipisci, fuga voluptate vero, quis repellendus maxime
+            aliquid minima ratione repudiandae.
+          </p>
+        </div>
+        <div class="image-box">
+          <img src="img/deadmau5.png" alt="Deadmau5" />
+        </div>
+      </div>
     </div>
     <!-- End DJ Section -->
+
+    <!-- Glass Section -->
+    <section class="glass-section">
+      <div class="glass"></div>
+    </section>
+
+    <!-- End Glass Section -->
 
     <!-- Script -->
     <script src="app.js"></script>
