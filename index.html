@@ -14,19 +14,22 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
-    <title>GlassTest</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css">
+ <!-- <link rel="stylesheet" href="styles/roundslider.css" />--> 
+    <title>Beatmaker</title>
   </head>
+
   <body>
     <!-- Landing Page -->
     <div class="landing-page">
       <nav class="navbar">
         <div class="logo">
-          <span>Ready co.</span>
+          <span>Sbkjarmul.</span>
         </div>
         <div class="menu"></div>
         <div class="buttons">
           <button class="btn">
-            <span>Sign Up</span></i>
+            <span>Start</span></i>
           </button>
         </div>
       </nav>
@@ -58,16 +61,14 @@
       />
       -->
       <div class="caption">
-        <h1>Wanderlust.</h1>
+        <h1>Beatmaker.</h1>
       </div>
       <div class="footer">
-        <div class="indicators"><span>03</span><span>/03</span></div>
         <div class="social-media">
           <ul class="footer-menu">
-            <li class="menu-item">Instagram.</li>
+            <li class="menu-item"><a href="https://www.instagram.com/sbkjarmul/" target="_blank">Instagram.</a> </li>
             <li class="menu-item">Facebook.</li>
-            <li class="menu-item">Dribble.</li>
-            <li class="menu-item">Twitter.</li>
+            <li class="menu-item"><a href="https://www.behance.net/sebastianjarmu" target="_blank">Behance.</a></li>
           </ul>
         </div>
       </div>
@@ -78,8 +79,8 @@
       <div class="black-box translate" data-speed="-0.3"></div>
       <div class="dj-box">
         <div class="content-box">
-          <h5>Live</h5>
-          <h1>Marshmello</h1>
+          <h5>ABOUT</h5>
+          <h1>The game</h1>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse,
             mollitia, et labore odit vitae expedita doloremque saepe ipsam
@@ -92,6 +93,7 @@
           <img src="img/marshmello.jpg" alt="Marshmello" />
         </div>
       </div>
+      <!--
       <div class="dj-box">
         <div class="content-box">
           <h5>Live</h5>
@@ -124,49 +126,148 @@
           <img src="img/deadmau5.png" alt="Deadmau5" />
         </div>
       </div>
+      -->
     </div>
     <!-- End DJ Section -->
 
     <!-- Glass Section -->
     <section class="glass-section">
-    <div class="glass">
-      <div class="layer gradient-normal"></div>
-      <span class="yi"></span>
-      <h1>Normal Entry</h1>
-      <h2>$25.00</h2>
-      <h5>Normal access for 1 day only!</h5>
-      <button class="buyBtn">+ add to cart</button>
-    </div>
-    <div class="glass">
-      <div class="layer gradient-premium"></div>
-      <span class="er"></span>
-      <h1>Premium Entry</h1>
-      <h2>$50.00</h2>
-      <h5>Premium access for 2 day!</h5>
-      <button class="buyBtn">+ add to cart</button>
-    </div>
-    <div class="glass">
-      <div class="layer gradient-vip"></div>
-      <span class="san"></span>
-      <h1>VIP Entry</h1>
-      <h2>$75.00</h2>
-      <h5>VIP access for whole event!</h5>
-      <button class="buyBtn">+ add to cart</button>
-    </div>
-        <!--
-      <div class="basic">
-        <div class="blur"></div>
+      <div class="glass-nav">
+        Beatmaker
       </div>
-      <div class="basic">
-        <div class="blur"></div>
+     
+      <!--CONTROLS-->
+
+      <div class="controls">
+        <div class="track-section">
+          <div class="kick-box">
+            <div class="kick-track">
+              <h5>Kick</h5>
+              <div class="line"></div>
+              <span class="track-name">808</span>
+              <button data-track="0" class="mute">
+                <i class="fas fa-volume-mute"></i>
+              </button>
+            </div>
+            <div id="kick-slider"></div>
+          </div>
+          <div class="snare-box">
+            <div class="snare-track">
+              <h5>Snare</h5>
+              <div class="line"></div>
+              <span class="track-name">808</span>
+              <button data-track="1" class="mute">
+                <i class="fas fa-volume-mute"></i>
+              </button>
+            </div>
+            <div id="snare-slider"></div>
+          </div>
+          <div class="perc-box">
+            <div class="perc-track">
+              <h5>Perc</h5>
+              <div class="line"></div>
+              <span class="track-name">808</span>
+              <button data-track="2" class="mute">
+                <i class="fas fa-volume-mute"></i>
+              </button>
+            </div>
+            <div id="perc-slider"></div>
+          </div>
+          <div class="tom-box">
+            <div class="tom-track">
+              <h5>Tom</h5>
+              <div class="line"></div>
+              <span class="track-name">808</span>
+              <button data-track="3" class="mute">
+                <i class="fas fa-volume-mute"></i>
+              </button>
+            </div>
+            <div id="tom-slider"></div>
+          </div>
+          <div class="hihat-box">
+            <div class="hihat-track">
+              <h5>Hihat</h5>
+              <div class="line"></div>
+              <span class="track-name">808</span>
+              <button data-track="4" class="mute">
+                <i class="fas fa-volume-mute"></i>
+              </button>
+            </div>
+            <div id="hihat-slider"></div>
+          </div>
+        </div>
+        <div class="play-box">
+          <h3><span id="tempo-value">150</span>bpm</h3>
+          <input type="range" class="tempo-slider" min="20" max="300" value="150">
+          <p>Beat intensity</p>
+          <button class="play">Play</button>
+        </div>
       </div>
-      --> 
+      <!-- END OF CONTROLS -->
+
+      <!-- CONSOLE WITH KEYS -->
+
+      <div class="console-section">
+      
+        <div class="console">
+          
+            <div class="kick">
+              <div class="pad kick-pad b0"></div>
+              <div class="pad kick-pad b1"></div>
+              <div class="pad kick-pad b2"></div>
+              <div class="pad kick-pad b3"></div>
+            </div>
+            <div class="snare">
+              <div class="pad snare-pad b0"></div>
+              <div class="pad snare-pad b1"></div>
+              <div class="pad snare-pad b2"></div>
+              <div class="pad snare-pad b3"></div>
+            </div>
+            <div class="perc">
+              <div class="pad perc-pad b0"></div>
+              <div class="pad perc-pad b1"></div>
+              <div class="pad perc-pad b2"></div>
+              <div class="pad perc-pad b3"></div>
+            </div>
+            <div class="tom">
+              <div class="pad tom-pad b0"></div>
+              <div class="pad tom-pad b1"></div>
+              <div class="pad tom-pad b2"></div>
+              <div class="pad tom-pad b3"></div>
+            </div>
+            <div class="hihat">
+              <div class="pad hihat-pad b0"></div>
+              <div class="pad hihat-pad b1"></div>
+              <div class="pad hihat-pad b2"></div>
+              <div class="pad hihat-pad b3"></div>
+            </div>
+        </div>
+        <!-- <button class="play">Play</button> -->
+      </div>
+            <!-- END OF CONTROLS -->
     </section>
 
-    <!-- End Glass Section -->
+    
 
+    <!-- End Glass Section -->
+    <!-- AUDIO -->
+    <audio src="./sounds/kick-808.wav" class="kick-sound"></audio>
+    <audio src="./sounds/snare-808.wav" class="snare-sound"></audio>
+    <audio src="./sounds/perc-808.wav" class="perc-sound"></audio>
+    <audio src="./sounds/tom-808.wav" class="tom-sound"></audio>
+    <audio src="./sounds/hihat-808.wav" class="hihat-sound"></audio>
     <!-- Script -->
-    <script src="app.js"></script>
+    <script language="JavaScript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+    <script type="text/javascript" src="./drumkit.js"></script>
+    
+
+  
+
+
+   
+
     <!-- End Script -->
   </body>
 </html>
