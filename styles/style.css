@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@700;800;900&display=swap");
 @font-face {
   font-family: Dream;
   src: url("../fonts/Dreamscape.ttf");
@@ -439,6 +440,7 @@ body {
 }
 
 .glass-section {
+  overflow-x: hidden;
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -486,12 +488,13 @@ body {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   width: 95%;
-  padding-top: 1rem;
+  padding-top: 1.2rem;
   padding-bottom: 1rem;
   text-transform: uppercase;
   font-family: Dream;
   font-size: 1.5rem;
   text-shadow: 1px 2px 6px black;
+  border-top: none;
 }
 
 .glass-section .glass-nav:before {
@@ -531,10 +534,13 @@ body {
 
 .glass-section .controls .track-section {
   width: 100%;
+  height: auto;
   background: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -568,6 +574,7 @@ body {
 .glass-section .controls .track-section .kick-box {
   position: relative;
   background: inherit;
+  margin: 1rem;
   padding: 1rem;
   width: 9.2rem;
   height: 9.2rem;
@@ -670,6 +677,7 @@ body {
   padding: 1rem;
   width: 9.2rem;
   height: 9.2rem;
+  margin: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -768,6 +776,7 @@ body {
   background: inherit;
   padding: 1rem;
   width: 9.2rem;
+  margin: 1rem;
   height: 9.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -868,6 +877,7 @@ body {
   padding: 1rem;
   width: 9.2rem;
   height: 9.2rem;
+  margin: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -967,6 +977,7 @@ body {
   padding: 1rem;
   width: 9.2rem;
   height: 9.2rem;
+  margin: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1139,7 +1150,7 @@ body {
      -moz-appearance: none;
           appearance: none;
   height: 7px;
-  width: 20%;
+  width: 20rem;
   background: rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
@@ -1308,6 +1319,72 @@ body {
 .glass-section .console-section .console .hihat .hihat-pad.music {
   -webkit-animation: flashPink 1s;
           animation: flashPink 1s;
+}
+
+.end {
+  position: relative;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem;
+}
+
+.end i {
+  font-size: 0.7rem;
+}
+
+.end .left-box {
+  margin: 1rem;
+  width: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: left;
+      align-self: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9rem;
+  color: rgba(194, 194, 194, 0.7);
+}
+
+.end .left-box span {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  font-size: 1rem;
+}
+
+.end img {
+  height: 5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.end .right-box {
+  margin: 1rem;
+  width: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.end .right-box i {
+  font-size: 0.9rem;
+  margin-left: 1.5rem;
 }
 
 @-webkit-keyframes flashBlue {
@@ -1567,11 +1644,15 @@ body {
     margin-bottom: 2rem;
     width: 100%;
   }
+  .dj-section .dj-box .content-box h5 {
+    font-size: 0.9rem;
+  }
   .dj-section .dj-box .content-box h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    font-weight: 600;
   }
   .dj-section .dj-box .content-box p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .dj-section .dj-box .image-box {
     width: 100%;
@@ -1622,8 +1703,17 @@ body {
   .dj-section .dj-box .image-box {
     width: 100%;
   }
-  .glass-section .glass {
-    display: none;
+  .glass-section .console-section .console {
+    padding: 2rem;
+  }
+  .glass-section .console-section .console .kick .pad,
+  .glass-section .console-section .console .snare .pad,
+  .glass-section .console-section .console .hihat .pad,
+  .glass-section .console-section .console .perc .pad,
+  .glass-section .console-section .console .tom .pad {
+    margin: 3px;
+    width: 4rem;
+    height: 4rem;
   }
 }
 
@@ -1665,6 +1755,42 @@ body {
   .dj-section .dj-box .image-box {
     min-width: 100%;
   }
+  .end {
+    padding: 2.5rem 0rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .end .left-box {
+    width: auto;
+    padding-bottom: 2rem;
+    margin: 0;
+  }
+  .end img {
+    padding-bottom: 1rem;
+  }
+  .end .right-box i {
+    margin: 0;
+  }
+  .glass-section .console-section .console {
+    padding: 1rem;
+  }
+  .glass-section .console-section .console .kick .pad,
+  .glass-section .console-section .console .snare .pad,
+  .glass-section .console-section .console .hihat .pad,
+  .glass-section .console-section .console .perc .pad,
+  .glass-section .console-section .console .tom .pad {
+    margin: 3px;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -1684,6 +1810,18 @@ body {
   }
   .dj-section .dj-box .content-box p {
     font-size: 8px;
+  }
+  .glass-section .console-section .console {
+    padding: 1rem;
+  }
+  .glass-section .console-section .console .kick .pad,
+  .glass-section .console-section .console .snare .pad,
+  .glass-section .console-section .console .hihat .pad,
+  .glass-section .console-section .console .perc .pad,
+  .glass-section .console-section .console .tom .pad {
+    margin: 3px;
+    width: 3rem;
+    height: 3rem;
   }
 }
 
