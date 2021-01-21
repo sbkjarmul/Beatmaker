@@ -342,7 +342,7 @@ class DrumKit {
         this.percName.innerText = "Tribal";
         break;
       case 10:
-        this.perceAudio.src = "./sounds/perc-weirdo.wav";
+        this.percAudio.src = "./sounds/perc-weirdo.wav";
         this.percName.innerText = "Weirdo";
         break;
     }
@@ -484,6 +484,8 @@ class DrumKit {
 
 $(document).ready(function () {
   const drumKit = new DrumKit();
+
+  //Ustawienie kontekstu audio
 
   //EVENT LISTENERS
 
