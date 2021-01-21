@@ -8,9 +8,8 @@ A vision of the project came to me during a javascript course. The layout of the
 
 ### UI Design
 
-Firstly, I prepared an UI project in Adobe XD.
-The first step was making an UI in Adobe XD.
+At the beginning, I prepared an UI project using Adobe XD. I like this stage, because I need to think and be creative.
 
 ### Landing page
 
-On the hero section I used a something like paralax effect. There are several layers and every single object is moving with his own speed, based on scroll position. I cut them out of one image and I used photoshop. The pictures on my site comes from unsplash.com.
+On the hero section I used a something like paralax effect. There are several layers and every single object is moving with his own speed, based on scroll position. I cut them out of one image using Adobe Photoshop. The pictures on my site comes from unsplash.com.
