@@ -10,6 +10,8 @@ A vision of the project came to me during a javascript course. The layout of the
 
 At the beginning, I prepared an UI project using Adobe XD. I like this stage, because I need to think and be creative.
 
+![Work in Adobe XD](https://github.com/sbkjarmul/Beatmaker/blob/master/img/BeatmakerXD.png)
+
 ### Landing page
 
 On the hero section I used a something like paralax effect. There are several layers and every single object is moving with his own speed, based on scroll position. I cut them out of one image using Adobe Photoshop. The pictures on my site comes from unsplash.com.
