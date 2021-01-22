@@ -15,3 +15,14 @@ At the beginning, I prepared an UI project using Adobe XD. I like this stage, be
 ### Landing page
 
 On the hero section I used a something like paralax effect. There are several layers and every single object is moving with his own speed, based on scroll position. I cut them out of one image using Adobe Photoshop. The pictures on my site comes from unsplash.com.
+
+```js
+window.addEventListener("scroll", () => {
+  let scroll = window.pageYOffset;
+
+  translate.forEach((element) => {
+    let speed = element.dataset.speed;
+    element.style.transform = `translateY(${scroll * speed}px)`;
+  });
+});
+```
