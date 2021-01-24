@@ -27,15 +27,15 @@ At the beginning, I prepared an UI project using Adobe XD. I like this stage, be
 
 On the hero section I used something like paralax effect. There are several layers and every single object is moving with his own speed, based on scroll position. I cut them out of one image using Adobe Photoshop. The pictures on my site come from unsplash.com.
 
-```js
-window.addEventListener("scroll", () => {
-  let scroll = window.pageYOffset;
-
-  translate.forEach((element) => {
-    let speed = element.dataset.speed;
-    element.style.transform = `translateY(${scroll * speed}px)`;
-  });
-});
-```
-
 ## Beatmaker app
+
+Beatmaker jest bardzo prosty w budowie jak i w obsludze. Sklada się z pięciu okrągłych suwaków do wybrania dźwięku, suwaka do ustawienia tempa wyrażonego w bpm, przycisku play oraz konsoli poniżej.
+
+![Control section](https://github.com/sbkjarmul/Beatmaker/blob/master/img/control-section.jpg)
+
+Po wybraniu odpowiednich dźwięków oraz ustawieniu tempa, należy aktywować klawisze na konsoli. W celu aktywacji danego bitu wystarczy kliknąć na wybrane pole. Po kliknięciu klawisz powininen zaświecić się na kolor rodzaju dźwięku, który reprezentuje.
+Gdy już wszystko ustawiłeś kliknij klawisz play, aby uruchomić konsole.
+
+![Console section](https://github.com/sbkjarmul/Beatmaker/blob/master/img/console-section.jpg)
+
+Dźwięki można dodawać i usuwać w trakcie odtwarzania. Dodatkowo ikony głośnika w kółkach znajdujących się w okrągłich suwakach pozwalają na wyciszenie danego dźwięku bez konieczności odklikiwania danej ścieżki.
