@@ -12,7 +12,7 @@ I created this theme using CSS pre-processor:
 
 - SASS
 
-This is a list of frameworks that I build my project using:
+Frameworks that I used in my project:
 
 - JQuery
 - RoundSlider
@@ -31,11 +31,17 @@ On the hero section I used something like paralax effect. There are several laye
 
 Beatmaker jest bardzo prosty w budowie jak i w obsludze. Sklada się z pięciu okrągłych suwaków do wybrania dźwięku, suwaka do ustawienia tempa wyrażonego w bpm, przycisku play oraz konsoli poniżej.
 
+Beatmaker is very simple in build and easy in use. It consists of five rounded sliders, which you can use to choose sounds, a horizontal slider for set up rate expressed in bpm (beat per minute), a play button and music console below them.
+
 ![Control section](https://github.com/sbkjarmul/Beatmaker/blob/master/img/control-section.jpg)
 
 Po wybraniu odpowiednich dźwięków oraz ustawieniu tempa, należy aktywować klawisze na konsoli. W celu aktywacji danego bitu wystarczy kliknąć na wybrane pole. Po kliknięciu klawisz powininen zaświecić się na kolor rodzaju dźwięku, który reprezentuje.
 Gdy już wszystko ustawiłeś kliknij klawisz play, aby uruchomić konsole.
 
+After choosing right tracks and setting rate, you have to active the console keys. In order to activate the beat, just click on the choosed square. After click the key should light up on the color of sound, which it represents. When you have set up every thing, click on play button to run a console.
+
 ![Console section](https://github.com/sbkjarmul/Beatmaker/blob/master/img/console-section.jpg)
 
 Dźwięki można dodawać i usuwać w trakcie odtwarzania. Dodatkowo ikony głośnika w kółkach znajdujących się w okrągłich suwakach pozwalają na wyciszenie danego dźwięku bez konieczności odklikiwania danej ścieżki.
+
+Sounds can be added and deleted during playing. Additionally the icons in circles, located in the middle of rounded sliders, allow for mute the sound, without unclicking the path.
