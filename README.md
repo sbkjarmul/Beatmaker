@@ -45,3 +45,7 @@ After choosing right tracks and setting rate, you have to active the console key
 ![Console section](https://github.com/sbkjarmul/Beatmaker/blob/master/img/console-section.jpg)
 
 At any time you can add or delete during playing. Additionally the icons in the circles, located in the middle of rounded sliders, allow you to mute the sound, without unclicking the path.
+
+## License & copyright
+
+Ⓒ Sebastian Jarmuł
