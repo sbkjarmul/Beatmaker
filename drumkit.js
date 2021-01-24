@@ -27,6 +27,7 @@ class DrumKit {
   repeat() {
     let step = this.index % 4;
     const activeBars = document.querySelectorAll(`.b${step}`);
+
     //Loop over the bars
 
     activeBars.forEach((bar) => {
@@ -485,10 +486,7 @@ class DrumKit {
 $(document).ready(function () {
   const drumKit = new DrumKit();
 
-  //Ustawienie kontekstu audio
-
   //EVENT LISTENERS
-
   drumKit.pads.forEach((pad) => {
     pad.addEventListener("click", drumKit.activePad);
     pad.addEventListener("animationend", function () {

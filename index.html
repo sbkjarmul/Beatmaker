@@ -14,8 +14,11 @@
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
       crossorigin="anonymous"
     />
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css">
- <!-- <link rel="stylesheet" href="styles/roundslider.css" />--> 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css"
+    />
+    <!-- <link rel="stylesheet" href="styles/roundslider.css" />-->
     <title>Beatmaker</title>
   </head>
 
@@ -28,47 +31,34 @@
         </div>
         <div class="menu"></div>
         <div class="buttons">
-          <button class="btn">
+          <!-- <button class="btn">
             <span>Start</span></i>
-          </button>
+          </button> -->
         </div>
       </nav>
-      <div class="shadow"></div>
 
+      <div class="shadow"></div>
       <div class="first translate" data-speed="-0.3"></div>
       <div class="second translate" data-speed="-0.1"></div>
       <div class="third translate" data-speed=".7"></div>
 
-      <!--
-        <img
-        src="/img/firstPlan.png"
-        class="firstPlan translate"
-        data-speed="-0.3"
-        alt=""
-      />
-      <img
-        src="/img/secondPlan.png"
-        class="secondPlan translate"
-        data-speed="-.1"
-        alt=""
-      />
-
-      <img
-        src="/img/background.jpg"
-        class="thirdPlan translate"
-        data-speed=".7"
-        alt=""
-      />
-      -->
       <div class="caption">
         <h1>Beatmaker.</h1>
       </div>
       <div class="footer">
         <div class="social-media">
           <ul class="footer-menu">
-            <li class="menu-item"><a href="https://www.instagram.com/sbkjarmul/" target="_blank">Instagram.</a> </li>
+            <li class="menu-item">
+              <a href="https://www.instagram.com/sbkjarmul/" target="_blank"
+                >Instagram.</a
+              >
+            </li>
             <li class="menu-item">Facebook.</li>
-            <li class="menu-item"><a href="https://www.behance.net/sebastianjarmu" target="_blank">Behance.</a></li>
+            <li class="menu-item">
+              <a href="https://www.behance.net/sebastianjarmu" target="_blank"
+                >Behance.</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -82,68 +72,27 @@
           <h5>ABOUT</h5>
           <h1>The game</h1>
           <p>
-            <!-- Cześć! Przedstawiam Ci mój pierwszy projekt oparty na JavaScript.
-            Beatmaker jest narzędziem do zabawy z muzyką. Za pomocą pięciu kolorowych
-            suwaków mozesz wybrać z pośród 77 dźwięków, a suwak pod nimi pozwoli Ci
-            na wybranie tempa odtwarzania wyrazonego w bpm. (beat per minute).
-            Duzy kwadrat z mniejszymi w srodku to konsola, która słuzy do wybrania, na ktory
-            z kolei bit przypadnie wybrany przez Ciebie dzwiek. 
-            Gdy juz wszystko ustawisz, wystarczy kliknąć przycisk PLAY. Miłej zabawy! -->
-
             Hey! I would like to present you my first javascript based project.
-            The beatmaker is a tool for making music with fun. By using five colorful, rounded sliders, you can choosing among 77 sounds and sliders below them, which allow you to choose playback rate expressed in bmp (beats per minute). The big square with the smaller ones into is a console, that is used to select which beat with selected sound will be turned on. Once you've set everything up, you just need to click the PLAY button. Have fun!
-
+            The beatmaker is a tool for making music with fun. By using five
+            colorful, rounded sliders, you can choosing among 77 sounds and
+            sliders below them, which allow you to choose playback rate
+            expressed in bmp (beats per minute). The big square with the smaller
+            ones into is a console, that is used to select which beat with
+            selected sound will be turned on. Once you've set everything up, you
+            just need to click the PLAY button. Have fun!
           </p>
         </div>
         <div class="image-box">
           <img src="img/marshmello.jpg" alt="Marshmello" />
         </div>
       </div>
-      <!--
-      <div class="dj-box">
-        <div class="content-box">
-          <h5>Live</h5>
-          <h1>No Name</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse,
-            mollitia, et labore odit vitae expedita doloremque saepe ipsam
-            quisquam facere aut? Quas soluta sequi doloremque suscipit officia
-            et rem adipisci, fuga voluptate vero, quis repellendus maxime
-            aliquid minima ratione repudiandae.
-          </p>
-        </div>
-        <div class="image-box">
-          <img src="img/noname.png" alt="NoName" />
-        </div>
-      </div>
-      <div class="dj-box">
-        <div class="content-box">
-          <h5>Live</h5>
-          <h1>Deadmau5</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse,
-            mollitia, et labore odit vitae expedita doloremque saepe ipsam
-            quisquam facere aut? Quas soluta sequi doloremque suscipit officia
-            et rem adipisci, fuga voluptate vero, quis repellendus maxime
-            aliquid minima ratione repudiandae.
-          </p>
-        </div>
-        <div class="image-box">
-          <img src="img/deadmau5.png" alt="Deadmau5" />
-        </div>
-      </div>
-      -->
     </div>
     <!-- End DJ Section -->
 
     <!-- Glass Section -->
     <section class="glass-section">
-      <div class="glass-nav">
-        Beatmaker
-      </div>
-     
+      <div class="glass-nav">Beatmaker</div>
       <!--CONTROLS-->
-
       <div class="controls">
         <div class="track-section">
           <div class="kick-box">
@@ -204,75 +153,68 @@
         </div>
         <div class="play-box">
           <h3><span id="tempo-value">150</span>bpm</h3>
-          <input type="range" class="tempo-slider" min="20" max="300" value="150">
+          <input
+            type="range"
+            class="tempo-slider"
+            min="20"
+            max="300"
+            value="150"
+          />
           <p>Beat intensity</p>
           <button class="play">Play</button>
         </div>
       </div>
       <!-- END OF CONTROLS -->
-
       <!-- CONSOLE WITH KEYS -->
-
       <div class="console-section">
-      
         <div class="console">
-          
-            <div class="kick">
-              <div class="pad kick-pad b0"></div>
-              <div class="pad kick-pad b1"></div>
-              <div class="pad kick-pad b2"></div>
-              <div class="pad kick-pad b3"></div>
-            </div>
-            <div class="snare">
-              <div class="pad snare-pad b0"></div>
-              <div class="pad snare-pad b1"></div>
-              <div class="pad snare-pad b2"></div>
-              <div class="pad snare-pad b3"></div>
-            </div>
-            <div class="perc">
-              <div class="pad perc-pad b0"></div>
-              <div class="pad perc-pad b1"></div>
-              <div class="pad perc-pad b2"></div>
-              <div class="pad perc-pad b3"></div>
-            </div>
-            <div class="tom">
-              <div class="pad tom-pad b0"></div>
-              <div class="pad tom-pad b1"></div>
-              <div class="pad tom-pad b2"></div>
-              <div class="pad tom-pad b3"></div>
-            </div>
-            <div class="hihat">
-              <div class="pad hihat-pad b0"></div>
-              <div class="pad hihat-pad b1"></div>
-              <div class="pad hihat-pad b2"></div>
-              <div class="pad hihat-pad b3"></div>
-            </div>
+          <div class="kick">
+            <div class="pad kick-pad b0"></div>
+            <div class="pad kick-pad b1"></div>
+            <div class="pad kick-pad b2"></div>
+            <div class="pad kick-pad b3"></div>
+          </div>
+          <div class="snare">
+            <div class="pad snare-pad b0"></div>
+            <div class="pad snare-pad b1"></div>
+            <div class="pad snare-pad b2"></div>
+            <div class="pad snare-pad b3"></div>
+          </div>
+          <div class="perc">
+            <div class="pad perc-pad b0"></div>
+            <div class="pad perc-pad b1"></div>
+            <div class="pad perc-pad b2"></div>
+            <div class="pad perc-pad b3"></div>
+          </div>
+          <div class="tom">
+            <div class="pad tom-pad b0"></div>
+            <div class="pad tom-pad b1"></div>
+            <div class="pad tom-pad b2"></div>
+            <div class="pad tom-pad b3"></div>
+          </div>
+          <div class="hihat">
+            <div class="pad hihat-pad b0"></div>
+            <div class="pad hihat-pad b1"></div>
+            <div class="pad hihat-pad b2"></div>
+            <div class="pad hihat-pad b3"></div>
+          </div>
         </div>
-        <!-- <button class="play">Play</button> -->
       </div>
-            <!-- END OF CONTROLS -->
+      <!-- END OF CONTROLS -->
     </section>
-
-    
-
     <!-- End Glass Section -->
-
-
-   <footer>
-    <div class="end">
-     <div class="left-box">
-       <i class="far fa-copyright"></i>2020<span>Sbkjarmul.</span>
-     </div>
-
-       <img src="./img/we.png" alt="">
-
-    
-     <div class="right-box">
-       <i class="fab fa-instagram"></i>
-       <i class="fab fa-behance"></i>
-     </div>
-    </div>
-  </footer>
+    <footer>
+      <div class="end">
+        <div class="left-box">
+          <i class="far fa-copyright"></i>2021<span>Sbkjarmul.</span>
+        </div>
+        <img src="./img/we.png" alt="" />
+        <div class="right-box">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-behance"></i>
+        </div>
+      </div>
+    </footer>
     <!-- AUDIO -->
     <audio src="./sounds/kick-808.wav" class="kick-sound"></audio>
     <audio src="./sounds/snare-808.wav" class="snare-sound"></audio>
@@ -280,16 +222,17 @@
     <audio src="./sounds/tom-808.wav" class="tom-sound"></audio>
     <audio src="./sounds/hihat-808.wav" class="hihat-sound"></audio>
     <!-- Script -->
-    
-    <script language="JavaScript"  src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script>
+
+    <script
+      language="JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"
+    ></script>
     <script type="text/javascript" src="./app.js"></script>
     <script type="text/javascript" src="./drumkit.js"></script>
-    
-
-  
-
-
 
     <!-- End Script -->
   </body>
